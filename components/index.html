@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled Tailwind CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- FontAwesome CDN 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ToolMate UI KIT</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <button
+      data-drawer-target="separator-sidebar"
+      data-drawer-toggle="separator-sidebar"
+      aria-controls="separator-sidebar"
+      type="button"
+      class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    >
+      <span class="sr-only">Open sidebar</span>
+      <svg
+        class="w-6 h-6"
+        aria-hidden="true"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+        ></path>
+      </svg>
+    </button>
+
+    <aside
+      id="separator-sidebar"
+      class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      aria-label="Sidebar"
+    >
+      <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <ul class="space-y-2 font-medium">
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+            <i class="fa-solid fa-check"></i>
+              <span class="ml-3">Installation</span>
+            </a>
+          </li>
+        </ul>
+        <ul
+          class="pt-4 mt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700"
+        >
+          <h1 class="text-white text-lg">Components</h1>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+            <i class="fa-solid fa-user"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Avatar</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+            <i class="fa-solid fa-stop"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Buttons</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+            <i class="fa-solid fa-circle-exclamation"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Alerts</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+            <i class="fa-solid fa-link"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Breadcrumbs</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+            <i class="fa-solid fa-clipboard"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Banner</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+            <i class="fa-solid fa-address-card"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Cards</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+            <i class="fa-solid fa-rug"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Badges</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+            <i class="fa-solid fa-keyboard"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Inputs</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+            <i class="fa-solid fa-bars"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">NavBars</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+            <i class="fa-solid fa-file-lines"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Pagination</span>
+            </a>
+          </li>
+        </ul>
+        <ul
+          class="pt-4 mt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700"
+        >
+          <h1 class="text-white text-lg">Sections</h1>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-house"></i>
+              <span class="ml-4">Hero</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-newspaper"></i>
+              <span class="ml-3">NewsLetter</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-heading"></i>
+              <span class="ml-3">Header</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-list"></i>
+              <span class="ml-3">Feature</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-users-rectangle"></i>
+              <span class="ml-3">CTA</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-money-bill-1-wave"></i>
+              <span class="ml-3">Pricing</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-chart-simple"></i>
+              <span class="ml-3">Stats</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-face-smile"></i>
+              <span class="ml-3">Testimonial</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-brands fa-blogger-b"></i>
+              <span class="ml-3">Blogs</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-right-to-bracket"></i>
+              <span class="ml-3">Sign in</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-user-plus"></i>
+              <span class="ml-3">Sign up</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-address-book"></i>
+              <span class="ml-3">Contact</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-people-group"></i>
+              <span class="ml-3">Teams</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-paragraph"></i>
+              <span class="ml-3">Content</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-boxes-stacked"></i>
+              <span class="ml-3">Logos</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-question"></i>
+              <span class="ml-3">FAQ's</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-forward-step"></i>
+              <span class="ml-3">Footer</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-bug"></i>
+              <span class="ml-3">404</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-regular fa-address-card"></i>
+              <span class="ml-3">About</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+            >
+            <i class="fa-solid fa-align-center"></i>
+              <span class="ml-3">Blog Content</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+
+    <div class="p-4 sm:ml-64">
+      <div
+        class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700"
+      >
+        <div class="grid grid-cols-3 gap-4 mb-4">
+          <div
+            class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800"
+          >
+            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+          </div>
+          <div
+            class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800"
+          >
+            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+          </div>
+          <div
+            class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800"
+          >
+            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800"
+        >
+          <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div
+            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
+          >
+            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+          </div>
+          <div
+            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
+          >
+            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+          </div>
+          <div
+            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
+          >
+            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+          </div>
+          <div
+            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
+          >
+            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800"
+        >
+          <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div
+            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
+          >
+            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+          </div>
+          <div
+            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
+          >
+            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+          </div>
+          <div
+            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
+          >
+            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+          </div>
+          <div
+            class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800"
+          >
+            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
